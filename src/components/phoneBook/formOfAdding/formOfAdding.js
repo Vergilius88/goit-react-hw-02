@@ -26,7 +26,6 @@ export default class formOfAdding extends Component {
     const { onAddContact } = this.props;
 
     onAddContact({ name, number });
-
     alert("Форма отправлена ");
     this.reset();
   };
@@ -38,7 +37,7 @@ export default class formOfAdding extends Component {
   render() {
     const { name, number } = this.state;
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={(this.handleSubmit)}>
         <label>
           Name
           <input
@@ -68,7 +67,7 @@ export default class formOfAdding extends Component {
             <option value="+38(063)">+38(063)</option>
           </datalist>
         </label>
-        <Button type="submit">Add contact</Button>
+        <Button type="submit">Create contact</Button>
       </form>
     );
   }

@@ -9,7 +9,7 @@ export default {
     width: 150px;
     height: 100%;
     border-radius: 10px;
-    margin: 20px 5px;
+    margin: 10px auto 25px;
     text-transform: uppercase;
     cursor: pointer;
     &:hover {

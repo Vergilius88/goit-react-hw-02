@@ -11,7 +11,7 @@ export default {
     margin-right: 40px;
   `,
   H2: styled.h2`
-    font-size: 2em;
+    font-size: 30px;
     font-family: "Lato";
     color: rgb(18, 34, 54);
     font-weight: bold;
@@ -37,7 +37,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.6em;
+    font-size: 16px;
     width: 150px;
     height: 100%;
     border-radius: 10px;

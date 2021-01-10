@@ -13,7 +13,7 @@ export default class Filter extends Component {
         Search contacts by name
         <input
           type="text"
-          placeholder="Enter a name to search."
+          placeholder="Enter your search data."
           name="filter"
           onChange={onChange}
         />
