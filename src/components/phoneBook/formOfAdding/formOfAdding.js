@@ -19,7 +19,11 @@ export default class formOfAdding extends Component {
     const { value, name } = target;
     this.setState({ [name]: value });
   };
-
+  formValidator = (e) => {
+    this.state.name && this.state.number
+      ? this.handleSubmit(e)
+      : alert("Заполните все поля.");
+  };
   handleSubmit = (e) => {
     e.preventDefault();
     const { name, number } = this.state;
@@ -37,7 +41,7 @@ export default class formOfAdding extends Component {
   render() {
     const { name, number } = this.state;
     return (
-      <form onSubmit={(this.handleSubmit)}>
+      <form onSubmit={this.formValidator}>
         <label>
           Name
           <input
